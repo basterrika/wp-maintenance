@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Maintenance
- * Description: Enable maintenance mode on the front for not logged users.
+ * Description: Simple WordPress maintenance mode plugin.
  * Version: 1.0.0
  * Author: Mikel
  * Author URI: https://basterrika.com
