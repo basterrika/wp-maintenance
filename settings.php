@@ -96,6 +96,7 @@ body {
                         </th>
                         <td>
                             <input type="checkbox" id="maintenance_enabled" name="maintenance_settings[enabled]" value="1" <?php checked($maintenance_enabled); ?>>
+                            <p class="description"><?php esc_html_e('Turn on maintenance mode for visitors. Logged-in users still see the normal site.', 'wp-maintenance'); ?></p>
                         </td>
                     </tr>
                     <tr>
@@ -104,6 +105,7 @@ body {
                         </th>
                         <td>
                             <input type="text" id="maintenance_title" name="maintenance_settings[meta_title]" value="<?php echo esc_attr($meta_title); ?>">
+                            <p class="description"><?php esc_html_e('Displayed in the browser tab. Keep it short and clear.', 'wp-maintenance'); ?></p>
                         </td>
                     </tr>
                     <tr>
@@ -112,6 +114,7 @@ body {
                         </th>
                         <td>
                             <input type="text" id="maintenance_description" name="maintenance_settings[meta_description]" value="<?php echo esc_attr($meta_description); ?>">
+                            <p class="description"><?php esc_html_e('Short page summary. Useful for search and link previews.', 'wp-maintenance'); ?></p>
                         </td>
                     </tr>
                     <tr>
@@ -120,6 +123,7 @@ body {
                         </th>
                         <td>
                             <textarea id="maintenance_html" name="maintenance_settings[html]"><?php echo esc_textarea(null !== $saved_html ? $saved_html : $html) ?></textarea>
+                            <p class="description"><?php esc_html_e('Main page content. Use simple HTML like headings, text, and links.', 'wp-maintenance'); ?></p>
                         </td>
                     </tr>
                     <tr>
@@ -128,6 +132,7 @@ body {
                         </th>
                         <td>
                             <textarea id="maintenance_css" name="maintenance_settings[css]"><?php echo esc_textarea(null !== $saved_css ? $saved_css : $css) ?></textarea>
+                            <p class="description"><?php esc_html_e('Styles used only on the maintenance page.', 'wp-maintenance'); ?></p>
                         </td>
                     </tr>
                     <tr>
@@ -136,6 +141,7 @@ body {
                         </th>
                         <td>
                             <textarea id="maintenance_js" name="maintenance_settings[js]"><?php echo esc_textarea($saved_js) ?></textarea>
+                            <p class="description"><?php esc_html_e('Optional scripts for this page (for example, a countdown).', 'wp-maintenance'); ?></p>
                         </td>
                     </tr>
                     <tr>
@@ -144,6 +150,7 @@ body {
                         </th>
                         <td>
                             <input type="text" id="google_analytics_id" name="maintenance_settings[google_analytics_id]" value="<?php echo esc_attr($google_analytics_id); ?>">
+                            <p class="description"><?php esc_html_e('Optional measurement ID (example: G-XXXXXXXXXX). Leave empty to disable tracking.', 'wp-maintenance'); ?></p>
                         </td>
                     </tr>
                 </tbody>
